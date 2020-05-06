@@ -19,7 +19,9 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./apps/api/test/jest-e2e.json"
+    "test:e2e": "jest --config ./apps/api/test/jest-e2e.json",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "@godaddy/terminus": "^4.3.1",
@@ -43,7 +45,8 @@
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.4",
     "sha2": "^1.0.2",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.24",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^7.0.0",
@@ -109,5 +112,6 @@
       "@backend/notifications/(.*)": "<rootDir>/libs/notifications/src/$1",
       "@backend/notifications": "<rootDir>/libs/notifications/src"
     }
-  }
+  },
+  "snyk": true
 }
