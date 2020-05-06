@@ -1,0 +1,111 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/api/src",
+  "monorepo": true,
+  "root": "apps/api",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/api/tsconfig.app.json"
+  },
+  "projects": {
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "consumers": {
+      "type": "application",
+      "root": "apps/consumers",
+      "entryFile": "main",
+      "sourceRoot": "apps/consumers/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/consumers/tsconfig.app.json"
+      }
+    },
+    "config": {
+      "type": "library",
+      "root": "libs/config",
+      "entryFile": "index",
+      "sourceRoot": "libs/config/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config/tsconfig.lib.json"
+      }
+    },
+    "mongo": {
+      "type": "library",
+      "root": "libs/mongo",
+      "entryFile": "index",
+      "sourceRoot": "libs/mongo/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/mongo/tsconfig.lib.json"
+      }
+    },
+    "logger": {
+      "type": "library",
+      "root": "libs/logger",
+      "entryFile": "index",
+      "sourceRoot": "libs/logger/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/logger/tsconfig.lib.json"
+      }
+    },
+    "users": {
+      "type": "library",
+      "root": "libs/users",
+      "entryFile": "index",
+      "sourceRoot": "libs/users/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/users/tsconfig.lib.json"
+      }
+    },
+    "profiles": {
+      "type": "library",
+      "root": "libs/profiles",
+      "entryFile": "index",
+      "sourceRoot": "libs/profiles/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/profiles/tsconfig.lib.json"
+      }
+    },
+    "rabbitmq": {
+      "type": "library",
+      "root": "libs/rabbitmq",
+      "entryFile": "index",
+      "sourceRoot": "libs/rabbitmq/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/rabbitmq/tsconfig.lib.json"
+      }
+    },
+    "exceptions": {
+      "type": "library",
+      "root": "libs/exceptions",
+      "entryFile": "index",
+      "sourceRoot": "libs/exceptions/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/exceptions/tsconfig.lib.json"
+      }
+    },
+    "requests": {
+      "type": "library",
+      "root": "libs/requests",
+      "entryFile": "index",
+      "sourceRoot": "libs/requests/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/requests/tsconfig.lib.json"
+      }
+    },
+    "notifications": {
+      "type": "library",
+      "root": "libs/notifications",
+      "entryFile": "index",
+      "sourceRoot": "libs/notifications/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/notifications/tsconfig.lib.json"
+      }
+    }
+  }
+}

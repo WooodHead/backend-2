@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@backend/config": [
+        "libs/config/src"
+      ],
+      "@backend/config/*": [
+        "libs/config/src/*"
+      ],
+      "@backend/mongo": [
+        "libs/mongo/src"
+      ],
+      "@backend/mongo/*": [
+        "libs/mongo/src/*"
+      ],
+      "@backend/logger": [
+        "libs/logger/src"
+      ],
+      "@backend/logger/*": [
+        "libs/logger/src/*"
+      ],
+      "@backend/users": [
+        "libs/users/src"
+      ],
+      "@backend/users/*": [
+        "libs/users/src/*"
+      ],
+      "@backend/profiles": [
+        "libs/profiles/src"
+      ],
+      "@backend/profiles/*": [
+        "libs/profiles/src/*"
+      ],
+      "@backend/rabbitmq": [
+        "libs/rabbitmq/src"
+      ],
+      "@backend/rabbitmq/*": [
+        "libs/rabbitmq/src/*"
+      ],
+      "@backend/exceptions": [
+        "libs/exceptions/src"
+      ],
+      "@backend/exceptions/*": [
+        "libs/exceptions/src/*"
+      ],
+      "@backend/requests": [
+        "libs/requests/src"
+      ],
+      "@backend/requests/*": [
+        "libs/requests/src/*"
+      ],
+      "@backend/notifications": [
+        "libs/notifications/src"
+      ],
+      "@backend/notifications/*": [
+        "libs/notifications/src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
