@@ -1,0 +1,13 @@
+version: '3'
+services:
+    mongo:
+        image: mongo:4
+        container_name: "mongodb-siapbantu"
+        ports:
+            - 27018:27017
+    rabbitmq:
+        image: rabbitmq:3.7-management
+        container_name: "rabbitmq-siapbantu"
+        ports:
+            - 5673:5672
+            - 15673:15672
